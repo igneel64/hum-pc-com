@@ -1,7 +1,41 @@
 <section id="head">
-    
+    <div class="wrapper">
+    <div class=" large-12 columns">
+    <nav role="navigation" class="top-bar" data-topbar>
+     <ul class="title-area">
+      <li><a><img src="<%= asset_url("hua.png") %>" class="logo-sm"></a></li>
+      <li class="toggle-topbar menu-icon"><a href="#">Menu </a></li>
+    </ul>
+    <section class="top-bar-section" style="padding:0px;">
+            <ul class="left">
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">FACILITIES</a></li>
+                 <li class="has-dropdown">
+                    <a href="#">MORE</a>
+                    <ul class="dropdown">
+                        <li><a href="#">NEWSLETTER</a></li>
+                        <li><a href="#">PARTNERS</a></li>
+                        <li><a href="#">EXAMPLES</a></li>
+                        <li><a href="#">GALLERY</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="right">
+              <li><a href="#">FORUM</a></li>
+            </ul>
+       </section>
+    </nav>
+  </div>
+</div>
 </section>
-<div style="height:1000px">
+
+    <div class="contained">
+    <div class="herotext"><h1>Harokopeio University</h1></div>
+    <div class="herolay"></div>
+    <div class="herobox"><img alt="hero" src="<%= asset_url("hero.jpg") %>"></div>
+    </div>
+
+<div style="height:2000px">
 </div>
 <section id="events">
     <div class="row">
@@ -45,6 +79,25 @@
     </div>
     
 </section>
+
+<section id="newsletter">
+    <div class="row">
+        <div class="large-3 medium-3 small-12 columns" style="text-align: center;">
+            <i class="fa fa-envelope-square" style="font-size:10rem;margin-left: auto;margin-right: auto;margin-top: 20px;margin-bottom: 28px;color: #9D9994;"></i>
+        </div>
+        <div class="large-9 medium-9 small-12 columns">
+         <div class="newletterbox">   
+            <h3>Harokopeio Newsletter</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.</p>
+            <input type="email" name="email" placeholder="example@hua.gr" style="height: 50px;">
+            <button>Subscribe</button>
+            </div> 
+        </div>
+    </div>
+    
+</section>
+   
 <section id="footer">
 <img class="logo" src="<%= asset_url("hua.png") %>" alt="hua">
     <div class="row">
@@ -69,7 +122,7 @@
             </span>
           </div>
         </div>
-  
+  </div>
 
     <div class="row" style="margin-bottom: -1rem">
         <div class="small-12 medium-6 medium-centered large-centered columns ">

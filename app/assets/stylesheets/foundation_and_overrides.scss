@@ -57,6 +57,9 @@
 // Allows the use of rem-calc() or lower-bound() in your settings
 @import 'foundation/functions';
 
+
+
+
 body{
     overflow-x: hidden;
 }
@@ -66,6 +69,157 @@ section{
     padding:15px 0px;
     
 }
+
+//HEAD
+
+$topbar-link-weight: 400;
+$topbar-link-font-family: 'Lato', sans-serif;
+$topbar-height:4.875rem;
+$topbar-link-font-size:1em;
+$topbar-bg-color:transparent;
+$topbar-link-color: white;
+$topbar-link-bg-hover:#c88a50;
+$topbar-dropdown-link-bg: rgb(227, 170, 117);
+#head{
+    padding:0px;
+}
+
+
+
+.logo-sm{
+    margin-right: 0.667em;
+    margin-left: 0.4em;
+    width: 69px;
+    height: 64px;
+    padding-top: 12px;
+}
+
+.wrapper{
+    height:78px;
+    position:relative;
+    z-index: 100;
+}
+
+ul.left{
+    li{
+         font-size: 0.8em;
+    }
+}
+ul.right{
+    li{
+            font-size: 0.8em;
+    }
+}
+
+.top-bar-section li:not(.has-form) {
+    background: transparent;
+  }
+
+.top-bar ul > li.has-dropdown a::after {
+  border-color: #9B8464 transparent transparent transparent;
+}
+
+//HERO
+#hero{
+    padding:0px;
+
+}
+.contained{
+    position: relative;
+    overflow: hidden;
+    top: -78px;
+}
+.herotext{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    margin-left: -50%;
+    height: 140px;
+    margin-top: -70px;
+    text-align: center;
+    text-shadow: 0 0 30px rgba(8, 58, 61, 0.2);
+    z-index: 9999;
+    h1{
+        font-family: 'Lato', sans-serif;
+        color:white;
+    }
+}
+
+.herolay{
+    height: 100%;
+    position: absolute;
+    background: rgba(51, 51, 51, 0.45);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.herobox{
+ 
+    z-index: -2;
+    min-width: 100%;
+    display: block;
+    img{
+      width:100%;
+      background-size:cover;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+.herobox{
+    img{
+    height: 625px;
+    width: 100%;
+    }
+}
+}
+
+//NEWSLETTER
+#newsletter{
+   background-color:#25252c;
+   padding: 22px 0px;
+}
+
+.newletterbox{
+    margin-top:20px;
+    h3{
+        color:white;
+        font-size:2rem;
+    }
+    p{
+        color:white;
+    }
+    input{
+        max-width: 360px;
+        float: left;
+        height:50px;
+    }
+    button{
+    font-size: 1.2rem;
+    float: left;
+    height: 50px;
+    margin-left: 50px;
+    padding: 8px 34px;
+    background: rgb(200, 138, 80);
+    border: 2px solid #9B8464;
+    color: rgb(244, 244, 244);
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    
+     -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    
+    &:hover{
+        background-color:white;
+        color:black;
+    }
+    }
+}
+
 
 
 //EVENT
@@ -90,7 +244,7 @@ section{
     margin: 0 auto;
     overflow: hidden;
     h2{
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Lato', sans-serif;
     font-weight:300;
     }
 
@@ -121,7 +275,9 @@ section{
 }
 
 .mainnews{
+        
     &:hover .lay{
+        
         opacity:1;
         height:100%;
     }
@@ -136,6 +292,9 @@ section{
     bottom: 0;
     positioN: absolute;
     
+    -webkit-transition: opacity 0.5s ease-out;
+    -moz-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
     transition: opacity 0.5s ease-out;
     opacity: 0; 
     overflow: hidden;
@@ -157,7 +316,7 @@ section{
     margin-bottom:100px;
     padding-top: 3rem;
     h2{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight:300;
     color:white;
     text-align: center;
@@ -1655,7 +1814,7 @@ $include-html-global-classes: $include-html-classes;
 // $topbar-link-weight: $font-weight-normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-// $topbar-link-bg: $topbar-bg;
+// $topbar-link-bg: transparent;
 // $topbar-link-bg-hover: $jet;
 // $topbar-link-bg-color-hover: $charcoal;
 // $topbar-link-bg-active: $primary-color;
@@ -1669,10 +1828,10 @@ $include-html-global-classes: $include-html-classes;
 // $topbar-button-top: 7px;
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: $oil;
+// $topbar-dropdown-bg: #c88a50;
 // $topbar-dropdown-link-color: $white;
 // $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
-// $topbar-dropdown-link-bg: $oil;
+
 // $topbar-dropdown-link-bg-hover: $jet;
 // $topbar-dropdown-link-weight: $font-weight-normal;
 // $topbar-dropdown-toggle-size: 5px;
