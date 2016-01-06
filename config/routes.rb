@@ -1,5 +1,16 @@
 Rails.application.routes.draw do
+  resources :posts
   get 'user/index'
+  get 'user/forum'
+  get 'user/news'
+  get 'user/news1'
+  get 'user/news2'
+  get 'user/news3'
+  get 'user/news4'
+  get 'user/news5'
+  get 'user/news6'
+  get 'user/news7'
+  
   root 'user#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -25,7 +25,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'font-awesome-sass', '~> 4.5.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'bxslider-rails'
 gem 'foundation-rails', '~> 5.5', '>= 5.5.3.2'
 gem 'jquery-turbolinks'
 # Use Unicorn as the app server

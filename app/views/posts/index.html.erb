@@ -1,0 +1,45 @@
+<div class="contained" style="height:50%;">
+<div class="herobox"><img style="height:57%;" alt="hero" src="<%= asset_url("main.jpg") %>"></div>
+    </div>
+
+<section id="posts">
+  
+<div class="row">
+  <p id="notice"><%= notice %></p>
+  <%= link_to '+New Post', new_post_path , {style: "font-size: 1.9rem;", class:"newpost"}%>
+  <div class="large-12 medium-12 small-12 columns">
+  <h1 style="text-align:center;">Listing Posts</h1>
+ <div class="index">
+
+
+  
+
+    <% @posts.each do |post| %>
+    <div class="onepost">
+      <div class="posttitle">
+        <span><%= post.title %> </span> <i class="fa fa-comment-o" style="font-size: 3rem;"></i>
+      </div>
+      <div class="postcontent">
+        <span><%= post.content %></span>
+      </div>
+      
+      <h4>Created <%= time_ago_in_words post.created_at %> ago</h4>
+      <div class="postactions">
+        <%= button_to "Show", post_path(post), :class => "button", :method => :get  %>
+        <%= button_to "Edit", edit_post_path(post), :class => "button", :method => :get  %>
+        <%= button_to "Destroy", post, :class => "button", :method => :delete, data: { confirm: 'Are you sure?' }  %>
+      </div>
+      </div>
+      <hr>
+      <% end %>
+
+
+  </div>
+ 
+ </div>
+</div>
+
+<br>
+
+
+</section>

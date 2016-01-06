@@ -13,6 +13,12 @@
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
+//= require bxslider
+$(document).ready(function(){
+  $('.bxslider').bxSlider(
+      {pager:false}
+      );
+});
 //= require foundation
 $(function(){ $(document).foundation(); });
 
