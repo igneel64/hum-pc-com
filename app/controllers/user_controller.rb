@@ -26,8 +26,28 @@ class UserController < ApplicationController
   def history
   end
   
-  def contact
+  def premises
   end
+  
+  def contacts
+  end
+  
+  def access
+  end
+  
+  def service1
+  end
+  def service2
+  end
+  def service3
+  end
+  def service4
+  end
+  def service5
+  end
+  def service6
+  end
+  
   
   
   

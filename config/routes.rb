@@ -10,6 +10,16 @@ Rails.application.routes.draw do
   get 'user/news5'
   get 'user/news6'
   get 'user/news7'
+  get 'user/contacts'
+  get 'user/access'
+  get 'user/premises'
+  get 'user/history'
+  get 'user/service1'
+   get 'user/service2'
+    get 'user/service3'
+     get 'user/service4'
+      get 'user/service5'
+       get 'user/service6'
   
   root 'user#index'
 
