@@ -159,7 +159,7 @@ ul.right{
     margin-top: -70px;
     text-align: center;
     text-shadow: 0 0 30px rgba(8, 58, 61, 0.2);
-    z-index: 1000;
+    z-index: 3;
     h1{
         font-family: 'Roboto Slab', serif;
         color:white;
@@ -489,9 +489,9 @@ margin: 54px 30px;
 }
 
 .newslay{
-    margin-right: -94px;
-    margin-bottom: -104px;
-     color:#0C0B0B !important; 
+    margin-right: -156px;
+    margin-bottom: 45px;
+    color:#0C0B0B !important; 
 }
 
 .content{
@@ -667,12 +667,15 @@ i.fa.fa-linkedin,i.fa.fa-facebook,i.fa.fa-twitter,i.fa.fa-instagram{
 }
 
 .posttitle{
-    border-radius:4px;
-    border:1px solid white;
+
     margin:2em auto;
+    font-family: 'Roboto Slab';
+    font-weight: 100;
+    color:rgba(29, 106, 0, 0.69);
     span{
     font-size: 2.8rem;
     }
+    
 }
 
 .postcontent{
@@ -692,8 +695,12 @@ i.fa.fa-linkedin,i.fa.fa-facebook,i.fa.fa-twitter,i.fa.fa-instagram{
     padding:20px;
     float:left;
     word-wrap: break-word;
-    
     max-width: 100%;
+    h4{
+    color:rgba(0, 0, 0, 0.88);   
+    font-family: 'Roboto Slab';
+    font-weight: 100;
+    }
 }
 
 .newpost{
@@ -710,10 +717,10 @@ i.fa.fa-linkedin,i.fa.fa-facebook,i.fa.fa-twitter,i.fa.fa-instagram{
     display:inline-block;
     float:left;
     color: white;
-    
+    font-weight: 700;
     margin-right: 2px;
-    border: 4px double #333333;
-    background: #333333;
+    border: 4px double rgb(141, 173, 130);
+    background: rgb(141, 173, 130);
     font-size: 0.8rem;
     padding: 7px 16px;
      
