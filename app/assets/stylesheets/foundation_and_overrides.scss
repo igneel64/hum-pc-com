@@ -97,11 +97,12 @@ $topbar-dropdown-link-bg: rgba(0, 0, 0, 0.47);
     background-color:rgb(66, 64, 64);
     margin-top:0px;
     text-align:center;
-    font-family: 'Roboto Slab', sans-serif;
-    font-weight:400;
+
     h3{
         margin-top:0px;
         color:white;
+            font-family: 'Roboto Slab', serif;
+    font-weight: 700;
     }
 }
 
@@ -163,7 +164,7 @@ ul.right{
     h1{
         font-family: 'Roboto Slab', serif;
         color:white;
-            font-weight: 700;
+            font-weight: 400;
     }
     p{
         color: #CECECE;
@@ -794,6 +795,10 @@ i.fa.fa-linkedin,i.fa.fa-facebook,i.fa.fa-twitter,i.fa.fa-instagram{
 
 .accessbox{
     margin:40px 0px;
+     p{
+         color:black;
+     }
+    
 }
 
 
