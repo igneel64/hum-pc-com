@@ -217,7 +217,7 @@ ul.right{
 
 //NEWSLETTER
 #newsletter{
-   background-color:#25252c;
+   background-color:#353535;
    padding: 22px 0px;
 }
 
@@ -266,7 +266,7 @@ ul.right{
 //FACILITIES
 
 #facilities{
-    background-color:rgb(37, 37, 44);
+    background-color:#353535;
     padding-top:0px;
     
     overflow:hidden;
@@ -608,6 +608,18 @@ font-family: 'Roboto Slab', serif;
     background-color: #F5F5F5;
     border-top: 1px solid black;
 
+.footlinker{
+    -webkit-transition: all 500ms ease-in;
+      -moz-transition: all 500ms ease-in;
+      -ms-transition: all 500ms ease-in;
+      -o-transition: all 500ms ease-in;
+      transition: all 500ms ease-in;
+    
+    &:hover{
+        background-color:transparent;
+        color:black;
+    }
+}
 
 .fa-stack{
     transition:all 0.5s ease-out;
