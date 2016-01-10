@@ -48,7 +48,8 @@ class UserController < ApplicationController
   def service6
   end
   
-  
+  def sitemap
+  end
   
   
 end

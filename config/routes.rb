@@ -20,6 +20,8 @@ Rails.application.routes.draw do
      get 'user/service4'
       get 'user/service5'
        get 'user/service6'
+       
+ get 'user/sitemap'      
   
   root 'user#index'
 

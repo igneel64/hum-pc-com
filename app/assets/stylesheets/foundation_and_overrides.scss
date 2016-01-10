@@ -810,9 +810,58 @@ i.fa.fa-linkedin,i.fa.fa-facebook,i.fa.fa-twitter,i.fa.fa-instagram{
      p{
          color:black;
      }
-    
+    i{
+        margin-right:3px;
+    }
 }
 
+
+//SITEMAP------------------------------------------
+//------------------------------------------------
+
+#sitemap{
+   background-color: #C6C5BA;
+    padding: -26px auto;
+    padding: 61px 0px;
+    h1{
+            color: rgb(126, 126, 126);
+    }
+}
+
+.sitemapul{
+    font-family: 'Didact Gothic', serif;
+    list-style:none;
+    li{
+        font-size: 1.4em;
+        margin: 10px auto;
+        a{
+          color: white;
+          line-height: 23px; 
+          
+          -webkit-transition: all 500ms ease-in;
+      -moz-transition: all 500ms ease-in;
+      -ms-transition: all 500ms ease-in;
+      -o-transition: all 500ms ease-in;
+      transition: all 500ms ease-in;
+      
+      &:hover{
+         background-color:transparent;
+         color:#9E9E9E;;
+      }
+        }
+        
+        h2 , h3{
+            color: #7e7e7e;
+             font-family: 'Didact Gothic', serif;
+             display:inline-block;
+             margin-right:5px;
+        }
+        
+        i{
+            font-size:24px;
+        }
+    }
+}
 
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with browser-based text zoom or user-set defaults.
